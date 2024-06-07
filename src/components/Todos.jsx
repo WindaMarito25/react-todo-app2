@@ -11,7 +11,7 @@ const Todos = ({ todos, toggleCompleted, deleteTodo }) => {
           <TodoItem
             key={todo.id}
             todo={todo}
-            // Teruskan function toggleCompleted ke component TodoItem
+            // Teruskan function toggleCompleted dan deleteTodo ke component TodoItem
             toggleCompleted={toggleCompleted}
             deleteTodo={deleteTodo}
           />
