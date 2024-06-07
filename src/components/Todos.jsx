@@ -3,7 +3,7 @@ import TodoItem from "./TodoItem";
 
 /*Function Todos component*/
 // Menerima function toggleCompleted sebagai sebuah prop
-const Todos = ({ todos, toggleCompleted }) => {
+const Todos = ({ todos, toggleCompleted, deleteTodo }) => {
   return (
     <div style={styles.container}>
       {todos.map((todo) => {
@@ -13,6 +13,7 @@ const Todos = ({ todos, toggleCompleted }) => {
             todo={todo}
             // Teruskan function toggleCompleted ke component TodoItem
             toggleCompleted={toggleCompleted}
+            deleteTodo={deleteTodo}
           />
         );
       })}
